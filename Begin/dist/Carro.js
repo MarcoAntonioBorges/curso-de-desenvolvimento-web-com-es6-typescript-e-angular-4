@@ -1,0 +1,26 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Carro = /** @class */ (function () {
+    function Carro(modelo, numeroDePortas) {
+        this.velocidade = 0;
+        this.modelo = modelo;
+        this.numeroDePortas = numeroDePortas;
+    }
+    Carro.prototype.acelerar = function () {
+        this.velocidade += 10;
+    };
+    Carro.prototype.parar = function () {
+        this.velocidade = 0;
+    };
+    Carro.prototype.velocidadeAtual = function () {
+        return this.velocidade;
+    };
+    Carro.prototype.getNumeroDePortas = function () {
+        return this.numeroDePortas;
+    };
+    Carro.prototype.getModelo = function () {
+        return this.modelo;
+    };
+    return Carro;
+}());
+exports.default = Carro;
